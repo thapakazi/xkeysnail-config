@@ -1,0 +1,3 @@
+[submodule "xkeysnail"]
+	path = xkeysnail
+	url = https://github.com/mooz/xkeysnail
