@@ -49,9 +49,15 @@ define_keymap(re.compile("Slack"), {
     K("C-s"): K("C-k"),
 }, "Slack")
 
+# Keybindings for Zeal https://github.com/zealdocs/zeal/
+define_keymap(re.compile("Gmrun"), {
+    # Ctrl+s to focus search area
+    K("C-r"): K("C-r"),
+}, "Gmrun")
+
 
 # Emacs-like keybindings in non-Emacs applications
-define_keymap(lambda wm_class: wm_class not in ("Emacs", "URxvt","Gnome-terminal"), {
+define_keymap(lambda wm_class: wm_class not in ("Emacs", "URxvt","Alacritty"), {
     # Cursor
     K("C-b"): with_mark(K("left")),
     K("C-f"): with_mark(K("right")),
